@@ -1,0 +1,36 @@
+$colors: (
+  clr-primary: #AA77FF,
+  clr-secondary: #C9EEFF,
+  clr-secondary-dark: #62CDFF,
+  clr-secondary-light: #C9EEFF
+);
+
+$spacing: (
+  spacing-1: 0.5rem,
+  spacing-2: 1rem,
+  spacing-3: 1.5rem,
+  spacing-4: 2rem,
+  spacing-5: 3rem,
+  spacing-6: 4rem,
+  spacing-7: 5rem,
+  spacing-8: 10rem,
+  spacing-responsive: min(20vw, 5rem)
+);
+
+$font-size: (
+  small-font : 0.8rem,
+  medium-font: 1rem,
+  large-font: 1.7rem,
+  title-font: 2.5rem
+);
+
+/*
+Example:
+h1{
+  color: map-get($colors , clr-secondary-dark );
+}
+
+palette{
+  https://colorhunt.co/palette/aa77ffc9eeff97deff62cdff
+}
+*/
