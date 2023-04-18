@@ -1,0 +1,533 @@
+{
+  "icons": [
+    {
+      "ring": "./assets/images/iconsSvg/ring.svg",
+      "title": "ring section",
+      "altText": "go to ring section" 
+    },
+    {
+      "magicBook": "./assets/images/iconsSvg/magicBook .svg",
+      "title": "Magic book",
+      "altText": "go to magical books section" 
+    },
+    {
+      "mana": "./assets/images/iconsSvg/mana.svg",
+      "title": "potion",
+      "altText": "go to section e potions" 
+    },
+    {
+      "wand": "./assets/images/iconsSvg/mini-staff.svg",
+      "title": "Magic wand",
+      "altText": "go to magic wands section" 
+    },
+    {
+      "orb": "./assets/images/iconsSvg/orb.svg",
+      "title": "magic orb",
+      "altText": "go to magic orbs section" 
+    },
+    {
+      "potion": "./assets/images/iconsSvg/potion.svg",
+      "title": "potion containers",
+      "altText": "go to section of containers for basic potions" 
+    },
+    {
+      "sage": "./assets/images/iconsSvg/sage.svg",
+      "title": "ancient wizard",
+      "altText": "go to wizard section" 
+    },
+    {
+      "pentagrama": "./assets/images/iconsSvg/pentagrama.png",
+      "title": "David's star",
+      "altText": "David's star" 
+    }
+  ],
+
+  "products": {
+      "rings":[
+        {
+          "name":"Anillo de Oro Claro",
+          "description":"Este anillo está hecho de oro claro y ha sido imbuido de magia para que sirva de receptor. El anillo puede ser imbuido por hechizos o elementos básicos, como fuego, agua, tierra o aire, cambiando su color y su efecto según el tipo de magia. Es un accesorio ideal para los aprendices que quieren experimentar con diferentes tipos de magia y aprender sus principios.",
+          "price":"5",
+          "type":["empty"],
+          "image":"./assets/images/productos/rings/light-golden-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name":"anillo de luz pura",
+          "description":"Este anillo ligero dorado es el accesorio ideal para los magos que quieren aprender a usar los encantamientos elementales. Está purificado y preparado para recibir cualquier tipo de magia, desde el fuego hasta el agua. Con este anillo, podrás practicar tus hechizos sin miedo a dañarlo o perderlo. Además, tiene un diseño elegante y sencillo que combina con cualquier atuendo.",
+          "price":"10",
+          "type":["Amplifiers"],
+          "image":"./assets/images/productos/rings/pure-light-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name":"anillo puro pesado",
+          "description":"Este anillo pesado de color dorado es un accesorio ideal para los magos que quieren mejorar sus habilidades con los encantamientos elementales. El anillo ha sido purificado con un ritual especial que le permite recibir y almacenar la energía de los cuatro elementos: fuego, agua, tierra y aire. Así, el portador del anillo puede aumentar su resistencia a los hechizos de ese tipo y practicar con más seguridad y eficacia. El anillo tiene un diseño elegante y simple.",
+          "price":"10",
+          "type": ["Damage reducers"],
+          "image":"./assets/images/productos/rings/heavy-pure-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "anillo elemental",
+          "description": "Anillo elemental dorado, un objeto único y especial que ha sido bendecido por los cuatro elementos: fuego, agua, tierra y aire. Este anillo no solo es hermoso y elegante, sino que también tiene poderes increíbles: puede sanar las heridas de su portador, aumentar su resistencia a los elementos y fortalecer su vínculo con la naturaleza. Es el regalo perfecto para los magos aprendices que quieren explorar las artes curativas y aprender más sobre el equilibrio de los elementos.",
+          "price": "10",
+          "type": ["curative", "Damage reducers"],
+          "image": "./assets/images/productos/rings/elemental-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de Oro Inferno",
+          "description": "El bronce es un metal que potencia la magia del fuego y el calor, así como la resistencia y la fuerza. Al usar este anillo, tus hechizos de fuego tendrán un mayor rango o alcance, permitiéndote quemar a tus enemigos desde una mayor distancia. Es un accesorio ideal para los magos que quieren dominar el elemento del fuego y causar un gran daño.",
+          "price": "15",
+          "type": ["Amplifiers"],
+          "image": "./assets/images/productos/rings/ring-amplifier-inferno.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de Oro Ígneo",
+          "description": "Se trata de un anillo de oro forjado con fuego mágico, que le da un brillo único y una protección especial. Al usarlo, te sentirás más resistente al elemento fuego, lo que te puede ser muy útil en tus aventuras o en tu vida cotidiana. No dejes pasar esta oportunidad de tener un anillo de oro forjado con fuego mágico, una joya rara y preciosa.",
+          "price": "15",
+          "type": ["Damage reducers"],
+          "image": "./assets/images/productos/rings/fireResistantRing.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo Amplificador Inferno",
+          "description": "¿Te gustan los hechizos de fuego? Entonces este anillo es para ti. Se trata de un anillo con una piedra de ruby que actúa como un catalizador del elemento fuego. Con él podrás potenciar mucho tus hechizos de fuego y causar un gran impacto en tus enemigos. Pero cuidado, este anillo no es para cualquiera. Necesitas tener un buen control de tu magia y tu voluntad para dominar tanto poder. ¿Te atreves a probarlo? Te aseguramos que no te arrepentirás o ¿si?",
+          "price": "55",
+          "type": ["Amplifiers"],
+          "image": "./assets/images/productos/rings/ruby-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de la Tormenta Esmeralda",
+          "description": "El Anillo de la Tormenta Esmeralda. Se trata de un anillo de plata con una hermosa piedra de esmeralda que actúa como un catalizador del viento. Al usarlo, podrás potenciar mucho tus hechizos de viento, creando ráfagas y tornados con solo un gesto. El Anillo de la Tormenta Esmeralda es una joya única y exclusiva que te hará sentir el poder de la naturaleza en tus manos.",
+          "price": "55",
+          "type": [ "Amplifiers"],
+          "image": "./assets/images/productos/rings/emerald-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de Zafiro Hidro",
+          "description": "Este anillo tiene una piedra de zafiro que te otorga el poder del océano. Con este anillo, podrás potenciar tus hechizos de agua y crear efectos sorprendentes. Además, este anillo te permite usar magias curativas básicas, lo que te ayudará a sanar tus heridas o las de tus compañeros. Este anillo es ideal para los magos y magas que quieren explorar las profundidades del agua y la vida.",
+          "price": "55",
+          "type": [ "Amplifiers", "curative"],
+          "image": "./assets/images/productos/rings/sapphire-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo replica Nibelungo",
+          "description": "Este anillo está hecho de plata y tiene una piedra de malachita en el centro. La malachita es una gema que potencia la energía vital y la regeneración, así como la protección contra los elementos. Al usar este anillo, tus hechizos curativos tendrán un mayor alcance y efectividad, y también ganarás resistencia a los daños elementales.",
+          "price": "55",
+          "type": [ "curative", "Damage reducers"],
+          "image": "./assets/images/productos/rings/curative-resistant-ring.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de Zafiro Glacial",
+          "description": "El zafiro es una gema que potencia la magia del agua y el hielo, así como la sabiduría y la serenidad. Al usar este anillo, tus hechizos de agua tendrán un mayor poder y podrás acceder al elemento hielo, congelando a tus enemigos o creando barreras de cristal. Es un accesorio ideal para los magos que quieren dominar los secretos del frío.",
+          "price": "170",
+          "type": [ "curative", "Damage reducers"],
+          "image": "./assets/images/productos/rings/sapphire-ring-v2.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de Malachita Salvaje",
+          "description": " La malachita es una gema que potencia la energía vital y la regeneración, así como la protección contra los elementos. Al usar este anillo, tus magias curativas tendrán un mayor poder y podrás realizar ataques ofensivos que dañan la vitalidad de tus enemigos y aumentan la tuya. Sin embargo, este anillo también tiene un precio: al usarlo, tu resistencia a los elementos se verá reducida. Es un accesorio ideal para los magos que quieren arriesgar su defensa por un mayor ataque y curación.",
+          "price": "170",
+          "type": [ "curative", "Amplifiers"],
+          "image": "./assets/images/productos/rings/ringAmplifierHeal.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Anillo de Cuarzo Superior Luminoso",
+          "description": "Este anillo está hecho de platino dorado y tiene un cuarzo transparente en el medio y un diamante pequeño a cada lado. El cuarzo es una gema que potencia la magia blanca y la luz, así como la claridad y la armonía. El diamante es una gema que potencia la pureza y la fortaleza. Al usar este anillo, podrás acceder a la magia blanca, lanzando hechizos curativos, ofensivos y defensivos de luz, así como resistir los daños elementales. ",
+          "price": "500",
+          "type": [ "curative", "Damage reducers", "Amplifiers"],
+          "image": "./assets/images/productos/rings/superior-cuarzo-ring.png",
+          "dataExtra": "Este anillo es recomendado para usuarios avanzados que tienen un alto nivel de control sobre la magia blanca y la luz."
+        }
+      ],
+      "books":[
+        {
+          "name":"Arcana: el arte mágico",
+          "description":"Este libro de tapa blanca es una guía práctica para iniciarse en el mundo de la magia. Aprende los hechizos básicos y los principios fundamentales que rigen esta ciencia oculta. Ideal para principiantes y curiosos que quieran descubrir los secretos de la magia.",
+          "price":"300",
+          "type":["Beginners", "Elemental Magic"],
+          "image":"./assets/images/productos/libros/arcana.png",
+          "dataExtra": ""
+        },
+        {
+          "name":"El libro de Thoth",
+          "description":"Este libro es una guía completa para aprender a invocar a los seres elementales y a los espíritus de la naturaleza, así como a las entidades superiores e inferiores. Con este libro podrás comunicarte con el mundo invisible y obtener su sabiduría, protección y ayuda.",
+          "price":"500",
+          "type":[
+            "Intermediate", 
+            "Invocations"],
+          "image":"./assets/images/productos/libros/libro-de-Thoth.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Demonología y tratados",
+          "description": "Este libro es un tratado sobre la demonología, que es el estudio de los seres malignos que habitan en los infiernos. Con este libro podrás conocer la historia, la jerarquía y las características de los demonios, así como los métodos para invocarlos, pactar con ellos y dominarlos.",
+          "price": "750",
+          "type": [
+            "Advanced",
+            "Demons"
+          ],
+          "image": "./assets/images/productos/libros/Demonología-y-tratados.png",
+          "dataExtra": ""
+        },        
+        {
+          "name":"El grimorio secreto",
+          "description":"Fundamentos de la magia negra, los rituales más usados y los materiales que requieren. También te advierte de los peligros y las precauciones que debes tomar al usar esta magia. Este libro es para los que quieren empezar o saber más sobre la magia negra.",
+          "price":"350",
+          "type":["Beginners", "Dark Magic"],
+          "image":"./assets/images/productos/libros/El-grimorio-secreto.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Compendio de Kran",
+          "description": "Este libro es un compendio de las enseñanzas del poderoso mago Kran, quien dedicó su vida al estudio de las artes arcanas y la magia antigua. Con este libro, podrás aprender los secretos de la alquimia, la invocación de elementales y el control de energías místicas. También se incluyen hechizos y rituales para la protección, la sanación y el ataque.",
+          "price": "1000",
+          "type": ["Advanced", "Magic"],
+          "image": "assets/images/productos/libros/Compendio-de-Kran.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Naturaleza y más",
+          "description": "Este libro es una guía para conectar con la naturaleza y sus poderes mágicos. Con este libro, podrás aprender a comunicarte con los espíritus de la naturaleza, a realizar rituales para bendecir la tierra y a utilizar la energía de las plantas para la curación y el crecimiento personal. También se incluyen consejos para la meditación y la conexión con el mundo natural.",
+          "price": "500",
+          "type": ["Beginner", "Nature"],
+          "image": "assets/images/productos/libros/Naturaleza-y-más.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Hechicería Compuesta",
+          "description": "Este libro es una introducción a la hechicería compuesta, una forma de magia que utiliza ingredientes naturales para crear pociones y filtros mágicos. Con este libro, podrás aprender a identificar y recolectar los ingredientes adecuados, a preparar y combinar las mezclas y a utilizarlas para la sanación, la protección y la magia de amor. También se incluyen recetas de pociones y filtros para diferentes propósitos mágicos.",
+          "price": "550",
+          "type": ["Intermediate", "Magic"],
+          "image": "assets/images/productos/libros/Hechicería-Compuesta.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Lumis: Ofensiva y Defensiva",
+          "description": "Este libro es un compendio de hechizos y rituales para protegerte y atacar usando la magia blanca. Aprenderás a prepararte para enfrentarte a cualquier adversidad y a desviar la energía negativa hacia tus enemigos. Además, el libro también contiene conjuros para atraer la energía positiva y curar el cuerpo y el alma.",
+          "price": "650",
+          "type": ["Intermediate", "White Magic"],
+          "image": "assets/images/productos/libros/Lumis.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Manual de Invocaciones Avanzado",
+          "description": "Este libro es una guía detallada para invocar seres celestiales y divinos con fines positivos. Aprenderás a establecer contacto con los ángeles, arcanos, querubines y otros seres de luz, y a solicitar su ayuda para lograr tus objetivos. Además, el libro también contiene rituales de purificación y protección para prepararte para tus invocaciones.",
+          "price": "1200",
+          "type": ["Advanced", "Invocation"],
+          "image": "assets/images/productos/libros/Manual-de-Invocaciones-Avanzado.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Mortuis",
+          "description": "Este libro es una guía para entender y contactar el mundo de los muertos. Aprenderás sobre las creencias y prácticas de las culturas antiguas y modernas, y cómo hacer contacto con los espíritus de los muertos para obtener guía y consejo. Además, el libro también contiene rituales de protección para ayudarte a mantenerte a salvo en el mundo de los muertos.",
+          "price": "850",
+          "type": ["Intermediate", "Necromancy"],
+          "image": "assets/images/productos/libros/Mortuis.png",
+          "dataExtra": ""
+        }
+      ],
+      "wands":{
+        "basic":[
+          {
+            "name": "Varita Rancia",
+            "description": "Esta varita mágica es ideal para practicar hechizos base. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
+            "price": "50",
+            "type": ["Beginner", "Wands"],
+            "image": "assets/images/productos/varita/basic/varita-rancia.png",
+            "dataExtra": "Para practicar hechizos base"
+          },
+          {
+            "name": "Varita Serpentina",
+            "description": "La forma de esta varita mágica es muy sencilla, pero su diseño en forma de serpiente le da un toque especial. Es perfecta para practicar hechizos elementales y tiene un agarre muy cómodo.",
+            "price": "80",
+            "type": ["Beginner", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Serpentina.png",
+            "dataExtra": "Para practicar hechizos elementales"
+          },
+          {
+            "name": "Varita Desaliñada",
+            "description": "Esta varita mágica es similar a la varita rancia, pero está diseñada para hechizos de largo alcance. Su apariencia desaliñada puede engañar a cualquiera, pero su poder es indudable.",
+            "price": "120",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Desaliñada.png",
+            "dataExtra": "Para hechizos de largo alcance"
+          },
+          {
+            "name": "Varita de Roble",
+            "description": "Esta varita mágica es robusta y de estilo antiguo. Potencia los hechizos naturales y está hecha para durar. Si eres un amante de la naturaleza, esta es la varita perfecta para ti.",
+            "price": "200",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-de-Roble.png",
+            "dataExtra": "Potencia los hechizos naturales"
+          },
+          {
+            "name": "Varita Lince",
+            "description": "Esta varita mágica es delgada y tiene un agarre práctico. Te dará velocidad en la ejecución de tus hechizos y aumentará su alcance. Perfecta para aquellos que necesitan una varita rápida y eficiente.",
+            "price": "150",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Lince.png",
+            "dataExtra": "Aumenta la velocidad y el alcance de los hechizos"
+          },
+          {
+            "name": "Varita Robusta",
+            "description": "Esta varita es perfecta para aquellos que buscan potenciar sus hechizos, aunque su alcance es corto. Está hecha de una madera resistente y tiene un color marrón oscuro.",
+            "price": "50",
+            "type": ["Beginner", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Robusta.png",
+            "dataExtra": ""
+          },
+          {
+            "name": "Varita Regis",
+            "description": "Esta varita es ideal para aquellos que buscan hechizos defensivos. Está hecha de una madera elegante y tiene un núcleo de plata. Se dice que su dueño puede usarla para conjurar poderosas barreras mágicas.",
+            "price": "200",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Regis.png",
+            "dataExtra": ""
+          },
+          {
+            "name": "Varita Veloz",
+            "description": "Esta varita fina es perfecta para aquellos que buscan aumentar el rango y la velocidad de sus hechizos. Es fácil de sostener y está hecha de una madera ligera. Se dice que su núcleo está hecho de pelo de unicornio.",
+            "price": "150",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Veloz.png",
+            "dataExtra": ""
+          },
+          {
+            "name": "Varita Simple",
+            "description": "Esta varita es perfecta para principiantes. Está hecha de una madera común y es fácil de usar. Aunque no es muy poderosa, es una buena opción para aquellos que quieren practicar sus hechizos básicos.",
+            "price": "30",
+            "type": ["Beginner", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-simple.png",
+            "dataExtra": ""
+          },
+          {
+            "name": "Varita Lotus",
+            "description": "Esta varita está hecha de madera oscura y es de estilo sencillo y fino. Es ideal para realizar hechizos oscuros y de gran poder. Tiene una longitud de 33 cm y se dice que su núcleo está hecho de un fragmento de la piedra filosofal.",
+            "price": "200",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Lotus.png",
+            "dataExtra": ""
+          },
+          {
+            "name": "Varita Serpentina Media",
+            "description": "Esta varita es similar a la Serpentina, pero de tamaño mediano. Su principal característica es la velocidad en la ejecución de los hechizos, permitiendo a su portador lanzar dos hechizos simultáneamente. Tiene una longitud de 35 cm y se dice que su núcleo está hecho de un fragmento de la varita de Merlín.",
+            "price": "250",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-serpentina-media.png",
+            "dataExtra": ""
+          },
+          {
+            "name": "Varita Alfil",
+            "description": "Esta varita potencia los hechizos básicos y de curación, otorgando un halo curativo a su portador. Está hecha de madera clara y tiene una longitud de 37 cm. Se dice que su núcleo está hecho de una escama del dragón Héctor.",
+            "price": "300",
+            "type": ["Advanced", "Wands"],
+            "image": "assets/images/productos/varita/basic/Varita-Alfil.png",
+            "dataExtra": ""
+          }          
+        ],
+        "deluxe":[
+          {
+            "name": "Varita deluxe",
+            "description": "Esta varita mágica es ideal para practicar hechizos base. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
+            "price": "300",
+            "type": ["Beginner", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/varita-deluxe.png",
+            "dataExtra": "Para practicar hechizos base"
+          },
+          {
+            "name": "Varita deluxe R",
+            "description": "Esta varita mágica es similar a la Varita Deluxe pero está especializada en hechizos de alcance corto. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
+            "price": "300",
+            "type": ["Intermediate", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/varita-deluxe-r.png",
+            "dataExtra": "Especializada en hechizos de alcance corto"
+          },
+          {
+            "name": "Varita delux",
+            "description": "Esta varita mágica está especializada en invocaciones y curación. Es una varita elegante y sofisticada que no tiene nada que envidiar a otras varitas.",
+            "price": "300",
+            "type": ["Advanced", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/varita-delux.png",
+            "dataExtra": "Especializada en invocaciones y curación"
+          },
+          {
+            "name": "Varita gelos",
+            "description": "Esta varita mágica está adornada con una gema marina y está especializada en hechizos elementales de agua y hielo. Requiere de expertos en el manejo de varitas para su uso adecuado.",
+            "price": "450",
+            "type": ["Advanced", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/varita-gelos.png",
+            "dataExtra": "Especializada en hechizos elementales de agua y hielo"
+          },
+          {
+            "name": "Varita aqua",
+            "description": "Esta varita mágica está incrustada con una mini gema marina imbuida de magia curativa y potencia el elemento agua y curativos para especialistas. Es una varita muy útil para los curanderos y especialistas en magia del agua.",
+            "price": "450",
+            "type": ["Advanced", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/varita-aqua.png",
+            "dataExtra": "Potencia el elemento agua y curativos para especialistas"
+          },
+          {
+            "name": "Varita Termus",
+            "description": "Concentra y potencia los hechizos de fuego y tierra en manos expertas. Se aprovecha mejor su habilidad con la práctica.",
+            "price": "400",
+            "type": ["Advanced", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/termus.png",
+            "dataExtra": "Para usuarios experimentados"
+          },
+          {
+            "name": "Varita Doble",
+            "description": "Presenta una bifurcación al final, especializada para combates de corta y larga distancia. Permite encadenar y lanzar hasta 2 hechizos, realmente muy potente.",
+            "price": "900",
+            "type": ["Advanced", "Wands"],
+            "image": "assets/images/productos/varita/deluxe/varita-doble.png",
+            "dataExtra": "Para usuarios avanzados y expertos"
+          },
+          {
+              "name": "Varita Rayo Veloz",
+              "description": "No hay muchas varitas dedicadas al elemento trueno debido a sus potencia de doble filo. Potencia su elemento, como permite tener acceso a su propia gama de hechizos.",
+              "price": "100",
+              "type": ["Advanced", "Wands"],
+              "image": "assets/images/productos/varita/deluxe/rayo-veloz.png",
+              "dataExtra": "Para usuarios expertos y especialistas"
+          }
+        ]
+      },
+      "orb":[
+        {
+          "name": "Orbe del Alma",
+          "description": "Orbe sagrada que otorga protección elemental y potencia la creatividad artística.",
+          "price": "600",
+          "type": ["Intermediate", "Orbs"],
+          "image": "assets/images/productos/orbe/orbe-alma.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Orbe Gélida",
+          "description": "Orbe mágica que otorga resistencia elemental al hielo y potencia los hechizos del mismo elemento.",
+          "price": "400",
+          "type": ["Beginner", "Orbs"],
+          "image": "assets/images/productos/orbe/orbe-gelida.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Orbe Luna",
+          "description": "Orbe mágica que otorga resistencia al elemento luz y oscuridad, y potencia los hechizos de oscuridad.",
+          "price": "800",
+          "type": ["Intermediate", "Orbs"],
+          "image": "assets/images/productos/orbe/orbe-luna.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Orbe Eclipse",
+          "description": "Orbe mágica que otorga resistencia al elemento luz y oscuridad, y potencia los hechizos de luz.",
+          "price": "800",
+          "type": ["Intermediate", "Orbs"],
+          "image": "assets/images/productos/orbe/orbe-eclipse.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Orbe Solar",
+          "description": "Orbe mágica que otorga resistencia al elemento fuego, además de potenciar los hechizos del mismo elemento.",
+          "price": "500",
+          "type": ["Beginner", "Orbs"],
+          "image": "assets/images/productos/orbe/orbe-solar.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Orbe Ascensión",
+          "description": "Orbe mágica que otorga resistencia elemental a todos los elementos, y potencia los hechizos curativos.",
+          "price": "1000",
+          "type": ["Advanced", "Orbs"],
+          "image": "assets/images/productos/orbe/orbe-ascencion.png",
+          "dataExtra": ""
+        }
+        
+      ],
+      "clock":[
+        {
+          "name": "reloj cronos",
+          "description": "reloj de mesa con diseño vintage y funcionalidad de cronómetro",
+          "price": "200",
+          "type": ["beginner"],
+          "image": "assets/images/productos/reloj/reloj-cronos.png",
+          "dataExtra": ""
+        },     
+        {
+          "name": "reloj aptus",
+          "description": "reloj de mesa con diseño vintage y funcionalidad de cronómetro",
+          "price": "200",
+          "type": ["beginner"],
+          "image": "assets/images/productos/reloj/reloj-aptus.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "reloj kram",
+          "description": "reloj de mesa con diseño vintage y elegante caja de madera",
+          "price": "200",
+          "type": ["beginner"],
+          "image": "assets/images/productos/reloj/reloj-kram.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "reloj afteri",
+          "description": "reloj de mesa con diseño vintage y función de cronómetro, aunque a veces puede retrasarse",
+          "price": "200",
+          "type": ["beginner"],
+          "image": "assets/images/productos/reloj/reloj-afteri.png",
+          "dataExtra": ""
+        }
+      ],
+      "potion":[
+        {    
+          "name": "recipiente ignis",    
+          "description": "Un resistente recipiente para contener pociones de elemento fuego. Su diseño único evita que el vidrio se rompa debido al calor extremo.",    
+          "price": "20",    
+          "type": ["beginner"],
+          "image": "assets/images/productos/botellitas/recipiente-ignis.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "recipiente nature",
+          "description": "Un resistente recipiente para contener pociones curativas. Su diseño único permite que los ingredientes naturales mantengan su frescura durante más tiempo.",
+          "price": "25",
+          "type": ["beginner"],
+          "image": "assets/images/productos/botellitas/recipiente-nature.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "recipiente aqua",
+          "description": "Un resistente recipiente para contener pociones de elemento agua y hielo. Su diseño único evita que el vidrio se rompa debido al frío extremo.",
+          "price": "18",
+          "type": ["beginner"],
+          "image": "assets/images/productos/botellitas/recipiente-aqua.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "recipiente lumis",
+          "description": "Un resistente recipiente para contener pociones de elemento luz. Su diseño único evita que la luz se escape, lo que permite que los ingredientes mantengan su potencia durante más tiempo.",
+          "price": "30",
+          "type": ["beginner"],
+          "image": "assets/images/productos/botellitas/recipiente-lumis.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "recipiente umbra",
+          "description": "Un resistente recipiente para contener pociones de elemento oscuridad. Su diseño único evita que la oscuridad se escape, lo que permite que los ingredientes mantengan su potencia durante más tiempo.",
+          "price": "30",
+          "type": ["beginner"],
+          "image": "assets/images/productos/botellitas/recipiente-umbra.png",
+          "dataExtra": ""
+        }
+      ]
+  }
+}
