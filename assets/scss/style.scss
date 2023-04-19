@@ -1,5 +1,14 @@
-@import url(../scss/base/reset.scss);
+@use '../scss/base/reset.scss' as *;
+@use '../scss/abstrac/shared.scss' as *;
+//@import url(../scss/base/reset.scss);
+//@import url(../scss/abstrac/variables.scss);
+//@import url(../scss/abstrac/mixins.scss);
+//@import url(../scss/abstrac/functions.scss);
+//@import url(../scss/layout/header.scss);
+
 body{
   color: var(--negro);
   background-color: var(--blanco);
+  background-color: blueviolet;
+  color: map-get($colors, clr-primary );
 }

@@ -1,42 +1,42 @@
 {
   "icons": [
     {
-      "ring": "./assets/images/iconsSvg/ring.svg",
+      "img": "./assets/images/iconsSvg/ring.svg",
       "title": "ring section",
       "altText": "go to ring section" 
     },
     {
-      "magicBook": "./assets/images/iconsSvg/magicBook .svg",
+      "img": "./assets/images/iconsSvg/magicBook .svg",
       "title": "Magic book",
       "altText": "go to magical books section" 
     },
     {
-      "mana": "./assets/images/iconsSvg/mana.svg",
+      "img": "./assets/images/iconsSvg/mana.svg",
       "title": "potion",
-      "altText": "go to section e potions" 
+      "altText": "go to section potions" 
     },
     {
-      "wand": "./assets/images/iconsSvg/mini-staff.svg",
+      "img": "./assets/images/iconsSvg/mini-staff.svg",
       "title": "Magic wand",
       "altText": "go to magic wands section" 
     },
     {
-      "orb": "./assets/images/iconsSvg/orb.svg",
+      "img": "./assets/images/iconsSvg/orb.svg",
       "title": "magic orb",
       "altText": "go to magic orbs section" 
     },
     {
-      "potion": "./assets/images/iconsSvg/potion.svg",
+      "img": "./assets/images/iconsSvg/potion.svg",
       "title": "potion containers",
       "altText": "go to section of containers for basic potions" 
     },
     {
-      "sage": "./assets/images/iconsSvg/sage.svg",
+      "img": "./assets/images/iconsSvg/sage.svg",
       "title": "ancient wizard",
       "altText": "go to wizard section" 
     },
     {
-      "pentagrama": "./assets/images/iconsSvg/pentagrama.png",
+      "img": "./assets/images/iconsSvg/pentagrama.png",
       "title": "David's star",
       "altText": "David's star" 
     }

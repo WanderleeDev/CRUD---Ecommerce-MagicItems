@@ -1,0 +1,13 @@
+/*const contentTag = item => `
+  <a href="#" rel="noopener noreferrer" referrerpolicy="no-referrer" target="_blank">
+    <img src="${item.img}" alt="${item.altText}">
+  </a>`;
+
+datos.then(data => {
+  const obj = data.icons;
+  console.log(obj);
+  return obj;
+})
+.then((obj)=>{
+  createMultiTag('li', obj, '#app', contentTag);
+});*/
