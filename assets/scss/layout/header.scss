@@ -1,28 +1,39 @@
+@use '../abstract/shared.scss' as *;
+*{
+  border: solid 0.5px rgb(0, 255, 72);
+}
 .headerPage{
+  padding: 4rem;
   display: flex;
   flex-flow: column wrap;
+
   &-navbar{
-    display: flex;
-    background-color: aliceblue;
+    @include flex(flex,row, wrap, space-around, center );
   }
+
   &-containerLogo{
     
   }
+
   &-logo{
     
   }
+
   &-navigationList{
-    
   }
+
   &-li{
     
   }
+
   &-link{
     
   }
+
   &-banner{
     
   }
+
   &-pageTitle{
     
   }
