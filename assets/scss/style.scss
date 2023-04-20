@@ -3,6 +3,7 @@
 @use '../scss/layout/header.scss';
 
 body{
+  @include textFormatting(1.5rem, 1.5rem);
   color: var(--negro);
   background-color: var(--blanco);
 }

@@ -1,14 +1,30 @@
 import './assets/scss/style.scss'
 import { datos } from "./assets/js/calldata"; //json exportado
 import { addHtmlBlock } from "./assets/js/utility/addHtmlBlock";  //agrega bloques de código HTML
-import { createMultiTag } from "./assets/js/utility/createMultiTag";
-import { contentHeader } from "./assets/js/pages/header.js"; //bloque de código header
+import { contentHeader } from "./assets/js/pages/header.js";
+import { unfoldMenu } from "./assets/js/listener/unfoldMenu.js"; //bloque de código header
+
+
+//header agregado
+addHtmlBlock(contentHeader,'#app','start'); 
+const btnMenu = document.querySelector('#btnMenu');
+
+const linksMenu =document.querySelectorAll('.headerPage-link');
+
+console.log(linksMenu);
+
+linksMenu.forEach(link => {
+  link.tabIndex= -1;
+}); 
+
+btnMenu.addEventListener('click', unfoldMenu);
 
 
 
 
 
-addHtmlBlock(contentHeader,'#app','start'); //header agregado
+
+
 
 
 

@@ -1,40 +1,186 @@
 @use '../abstract/shared.scss' as *;
 *{
-  border: solid 0.5px rgb(0, 255, 72);
+  //border: solid green 1px;
 }
+
 .headerPage{
-  padding: 4rem;
+  position: relative;
   display: flex;
   flex-flow: column wrap;
+  font-size: 1.5rem;
 
   &-navbar{
-    @include flex(flex,row, wrap, space-around, center );
+    @include flex(flex,row, nowrap, space-between, center,1rem);
+    position: fixed;
+    inset: 0 0 auto 0;
+    height: 6rem;
+    padding-inline: 2rem;
+    color: white;
+    background-color: rgba(194, 113, 113, 0.097);
+    z-index: 10;
   }
 
   &-containerLogo{
-    
+    display: none;
   }
 
   &-logo{
-    
   }
 
-  &-navigationList{
+  &-btnMenu{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
   }
 
+  &-btnSvg{
+    color: var(--negro)
+  }
+
+  &-searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    border: solid 1px var(--negro);
+    border-radius: 1rem;
+  }
+  &-labelSearch{
+    width: 2rem;
+    height: 2rem;
+    order: 1;
+    border-radius: 50%;
+  }
+  &-searchIcon{
+    color: var(--negro);
+  }
+  &-searchInput{
+    width: 100%;
+    border-radius: 1rem;
+    outline: transparent;
+
+  }
+  &-loginLink{
+    width: 2rem;
+    height: 2rem;
+  }
+  &-loginIcon{
+    color: var(--negro);
+  }
+
+  &-menu{
+    //($display, $direction, $wrap:wrap, $justify:initial, $align:initial, $gap:0)
+    @include flex(flex,column,wrap,center,center,2rem);
+    position: fixed;
+    inset: 6rem 0 auto;
+    height: calc(100vh - 6rem);
+    width: 100%;
+    background-color: map-get($colors, clr-primary);
+    clip-path: circle(0.0% at 50% 0);
+    transition: clip-path 0.5s linear;
+  }
+  
   &-li{
-    
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    :hover::before,
+    :focus::before{
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      top: 50%;
+      left: 30%;
+      transform: translateY(-50%);
+      background-color: var(--negro);
+      animation: rotateIcon 1.5s linear infinite;
+    }
   }
-
+  
   &-link{
-    
+    padding: 2rem;
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1.5s ease;
   }
-
+  
+  
   &-banner{
-    
-  }
+    position: relative;
+    display: grid;
+    align-content: center;
+    height: rem(400);
+    margin-top: 6rem;
+    background-image: url('../../images/banner/banner.png');
+    background-color: rgba(0, 255, 255, 0.108);
 
-  &-pageTitle{
-    
+    ::before,
+    ::after{
+      font-size: 0.9rem;
+      padding: 0.5rem;
+      position: absolute;
+      bottom: 10%; //13%
+      line-height: 1.2;
+      opacity: 0;
+    }
+
+    ::before{
+      --delay: 0s;
+      content: '"Artículos de primera calidad al mejor precio"';
+      animation: appear linear 6s infinite var(--delay);
+    }
+
+    ::after{
+      --delay: 3s;
+      content: '"Todas las semanas libros, anillos,orbes y mas ..."';
+      animation: appear linear 6s infinite var(--delay);
+    }
   }
+  
+  &-pageTitle{
+    padding: 1rem;
+    margin-top: 7rem;
+    font-size: map-get($font, responsive-font );
+    font-weight: 700;
+  }
+}
+
+.menu--open{
+  clip-path: circle(150% at 50% 0);
+}
+
+.link-opacity-1{
+  opacity: 1;
+}
+
+@keyframes rotateIcon {
+  0%{
+    transform: translateY(-50%) rotate(0) scale(1);
+  };
+  50%{
+    transform:  translateY(-50%) rotate(180deg) scale(0);
+    border-radius: 50%;
+  };
+  100%{
+    transform: translateY(-50%) rotate(360deg) scale(1);
+  }; 
+}
+
+@keyframes appear {
+  0%, 50%{
+    opacity: 0;
+    pointer-events: none;
+  };
+  20%{
+    transform: translateY(-1rem);
+    opacity: 1;
+  };
+  100%{
+    transform: translateY(-1rem);
+    opacity: 0;
+    pointer-events: none
+  };
 }

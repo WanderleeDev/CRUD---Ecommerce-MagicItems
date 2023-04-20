@@ -17,11 +17,13 @@ $spacing: (
   spacing-responsive: min(20vw, 5rem)
 );
 
-$font-size: (
-  small-font : 0.8rem,
-  medium-font: 1rem,
-  large-font: 1.7rem,
-  title-font: 2.5rem
+$font: (
+  xs-font : 0.8rem,
+  sm-font: 1rem,
+  base-font: 1.5rem,
+  lg-font: 2rem,
+  xl-font: 2.5rem,
+  responsive-font: min(12vw, 6rem),
 );
 
 /*
