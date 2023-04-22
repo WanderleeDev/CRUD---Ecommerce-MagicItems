@@ -9,7 +9,3 @@ export function createMultiTag(tag, list,id, content){
   });
   target.append(subContainer);
 }
-
-function createTag() {
-  
-}

@@ -1,0 +1,197 @@
+@use '../abstract/shared.scss' as *;
+*{
+  //border:solid 1px green;
+}
+
+.footer{
+  display: grid;
+  background-color: var(--blanco);
+  color: var(--negro);
+  font-size: 0.9rem;
+  @media screen and (min-width:rem(900)) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  
+  &-form{
+    @include flex(flex, column, wrap, center, center);
+    padding: 1rem;
+    line-height: 1.2;
+    @media screen and (min-width:rem(900)) {
+      grid-column: 3/end;
+    }
+  }
+  
+  &-info{
+    text-align: center;
+    font-weight: 600;
+  }
+
+  &-newsletter{
+    display: flex;
+    justify-content: space-around;
+    margin-block-start: 1.5rem;
+    margin-inline: auto;
+    //background-color: aliceblue;
+    background-color: map-get($colors, clr-secondary );
+    border-radius: 2rem;
+  }
+
+  &-response{
+    width: 70%;
+    padding: 0.7rem;
+    border-radius: 2rem 0 0 2rem;
+    flex-grow: 1;
+    caret-color: map-get($colors, clr-primary );
+  }
+
+  &-submitResponse{
+    width: 30%;
+    padding: 0.5rem;
+    border-radius: 0 2rem 2rem 0;
+    font-weight: 600;
+    color: #fff;
+    background-color: map-get($colors , clr-primary );
+    cursor: pointer;
+    &:hover{
+      opacity: 0.9;
+    } 
+  }
+
+  &-conditionsBlock{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block-start: 0.7rem;
+  }
+
+  &-conditionCheck{
+    accent-color: map-get($colors , clr-primary );
+  }
+
+  &-conditions{
+    font-size: 0.7rem;
+    letter-spacing: initial;
+  }
+
+  &-seeConditions{
+    &:hover,
+    &:focus{
+      color: rgba(0, 0, 0, 0.667);
+    }
+  }
+
+  &-list{
+    display: grid;
+    grid-template-rows: 1;
+
+    @media screen and (min-width:rem(900)) {
+      grid-column: 1/end;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &-listItem{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    //transition: 0.3s grid-template-rows linear;
+  }
+
+  &-accordionHead{
+    position: relative;
+    background-color: var(--blancoDark);
+    ::after{
+      position: absolute;
+      inset: 50% 0 0 92%;
+      transform: translateY(-50%);
+      content: "❯";
+
+      @media screen and (min-width:rem(900)) {
+        content: none;
+      }
+      
+    }
+  }
+
+  &-accordionTitle{
+    text-transform: uppercase;
+    padding: 0.7rem 1rem;
+    font-weight: 600;
+    border: solid 1px var(--negroPlus);
+    &:focus-within{
+      //outline: solid rem(1) var(--blanco);
+    }
+  }
+
+  &-accordionHeadToggle{
+    display: none !important;
+    &:checked ~ .footer-accordionBody{
+      color: var(--blanco);
+      background-color: var(--negro);
+      --row : 2fr;
+      height: auto;
+    }
+
+    @media screen and (min-width:rem(900)) {
+      &:checked ~ .footer-accordionBody{
+        color: none;
+        background-color: initial;
+        color: var(--negro);
+      }
+    }
+  }
+  
+  &-accordionBody{
+    height: 0;
+    --row: 0fr;
+    display: grid;
+    grid-template-rows: var(--row, 0fr);
+    overflow: hidden;
+    transition: height 0.3s linear;
+
+    @media screen and (min-width:rem(900)) {
+      height: initial;
+    }
+  }
+
+  &-accordionItem{
+    padding: 0.7rem 1rem;
+  }
+
+  &-copyright{
+    padding: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    box-shadow: inset 0 rem(2) rem(10) 0 rgba(0, 0, 0, 0.205);
+    @media screen and (min-width:rem(900)) {
+      grid-column: 1/end;
+    }
+  }
+}
+
+.socialMedia{
+  width: max-content;
+  margin-inline: auto;
+  display: flex;
+  padding: 2rem 0;
+  gap: min(4vw ,2.5rem);
+
+  @media screen and (min-width:rem(900)) {
+    grid-area: 1/1/2/3;
+  }
+  
+  &-icon{
+    background-image: url('https://icons8.com/icon/118490/facebook');
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+  &-link{
+    
+  }
+}
+
+//Síguenos en
+
+
+
+

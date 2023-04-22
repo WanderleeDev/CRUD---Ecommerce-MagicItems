@@ -1,8 +1,10 @@
 $colors: (
-  clr-primary: #8B5A2B,
-  clr-secondary: #DAA520,
-  clr-secondary-dark: #FFD700,
-  clr-secondary-light: #F5DEB3,
+  clr-primary: #260B1A,
+  clr-secondary: #F2D9BB,
+  clr-complementary: #5F7373,
+  clr-complementary-2: #8C694A,
+  clr-complementary-3: #26130B,
+  clr-gradient: (var(--direction),#2F1019,#BBB49E,#5C4232)
 );
 
 $spacing: (

@@ -3,6 +3,10 @@
   /* Colores */
   --negro         : #393939;
   --blanco        :#ececec;
+  --blancoPlus        :#ededed66;
+  --negroPlus        :#39393966;
+  --blancoDark        :#fff;
+  --negroDark        :#000;
   
   /* Tipografía */
   --tipo-principal   : Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -14,6 +18,10 @@
   :root{
       --negro         : #ececec;
       --blanco        :#393939;
+      --negroPlus        :#ededed66;
+      --blancoPlus        :#39393966;
+      --blancoDark        :#000;
+      --negroDark        :#fff;
 
   }
 }
@@ -103,6 +111,10 @@ form , input, textarea, select , button , label{
     color:inherit;
     display: block;
     /* (Opcional) */ appearance: none;
+}
+input[type=checkbox]{
+  display: initial;
+  appearance: auto;
 }
 
 /* Reseteamos las tablas */

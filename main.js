@@ -1,23 +1,26 @@
 import './assets/scss/style.scss'
 import { datos } from "./assets/js/calldata"; //json exportado
 import { addHtmlBlock } from "./assets/js/utility/addHtmlBlock";  //agrega bloques de código HTML
-import { contentHeader } from "./assets/js/pages/header.js";
-import { unfoldMenu } from "./assets/js/listener/unfoldMenu.js"; //bloque de código header
+import { contentHeader } from "./assets/js/pages/header.js"; //contenido header
+import { unfoldMenu } from "./assets/js/listener/unfoldMenu.js";
+import { contentFooter } from "./assets/js/pages/footer.js";
 
 
 //header agregado
-addHtmlBlock(contentHeader,'#app','start'); 
+addHtmlBlock(contentHeader,'body','start'); 
 const btnMenu = document.querySelector('#btnMenu');
 
 const linksMenu =document.querySelectorAll('.headerPage-link');
-
-console.log(linksMenu);
 
 linksMenu.forEach(link => {
   link.tabIndex= -1;
 }); 
 
 btnMenu.addEventListener('click', unfoldMenu);
+
+//footer agregado
+addHtmlBlock(contentFooter,'#app','after'); 
+
 
 
 

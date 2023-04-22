@@ -1,23 +1,28 @@
 @use '../abstract/shared.scss' as *;
-*{
-  //border: solid green 1px;
-}
 
 .headerPage{
   position: relative;
   display: flex;
   flex-flow: column wrap;
-  font-size: 1.5rem;
-
+  
   &-navbar{
     @include flex(flex,row, nowrap, space-between, center,1rem);
     position: fixed;
     inset: 0 0 auto 0;
     height: 6rem;
-    padding-inline: 2rem;
-    color: white;
-    background-color: rgba(194, 113, 113, 0.097);
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    color: var(--negro);
     z-index: 10;
+
+    @media screen and (min-width: rem(800)) {
+      font-size: map-get($font , sm-font);
+      justify-content: center;
+    }
+  }
+  &-navbar:hover{
+    color: var(--blanco);
+    background-color: var(--negroPlus);
   }
 
   &-containerLogo{
@@ -28,44 +33,69 @@
   }
 
   &-btnMenu{
+    @media screen and (min-width: rem(800)) {
+      display: none;
+    }
+  }
+
+  &-btnSvg{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
   }
 
-  &-btnSvg{
-    color: var(--negro)
+  &-searchBar{
+    @include flex(flex,row, nowrap, space-between, center,0.3rem);
+    width: max(20%, 12rem);
+    padding-inline: 0.5rem;
+    border: solid 1px var(--negro);
+    border-radius: 2rem;
+    @media screen and (min-width: rem(800)) {
+      order: -2;
+    }
   }
 
-  &-searchBar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    border: solid 1px var(--negro);
-    border-radius: 1rem;
-  }
   &-labelSearch{
+    display: grid;
+    place-items: center;
+    order: 1;
     width: 2rem;
     height: 2rem;
-    order: 1;
-    border-radius: 50%;
   }
+  
   &-searchIcon{
-    color: var(--negro);
+    @extend .headerPage-btnSvg;
+    border-left:solid rem(1) currentColor ;  
   }
+
+  &-containerIcons{
+    display: flex;
+    gap: 1rem;
+  }
+  
   &-searchInput{
     width: 100%;
     border-radius: 1rem;
     outline: transparent;
+  }
 
+  &-shoppingCarLink{
+    display: none;
+    animation: aniShoppingCar 1s ease-in-out 1;
+    @media screen and (min-width: rem(400)) {
+      display: initial;
+    }
   }
+
+  &-shoppingCarIcon{
+    @extend .headerPage-btnSvg;
+  }
+  
   &-loginLink{
-    width: 2rem;
-    height: 2rem;
   }
+  
   &-loginIcon{
-    color: var(--negro);
+    @extend .headerPage-btnSvg;  
   }
 
   &-menu{
@@ -74,10 +104,20 @@
     position: fixed;
     inset: 6rem 0 auto;
     height: calc(100vh - 6rem);
-    width: 100%;
-    background-color: map-get($colors, clr-primary);
-    clip-path: circle(0.0% at 50% 0);
+    clip-path: circle(0% at 6% -8%);
     transition: clip-path 0.5s linear;
+    z-index: 20;
+    
+    @media screen and (min-width: rem(800)) {
+      flex-flow: row nowrap;
+      gap: 0;
+      min-width: 500px;
+      //padding-inline: 2rem;
+      position: initial;
+      height: initial;
+      clip-path: none;
+      order: -1;
+    }
   }
   
   &-li{
@@ -105,24 +145,32 @@
     pointer-events: none;
     opacity: 0;
     transition: opacity 1.5s ease;
+    @media screen and (min-width: rem(800)){
+      opacity: 1;
+      pointer-events: auto;
+      padding: initial;
+    } 
   }
-  
   
   &-banner{
     position: relative;
     display: grid;
     align-content: center;
-    height: rem(400);
-    margin-top: 6rem;
+    height: rem(500);
+    //margin-top: 6rem;
     background-image: url('../../images/banner/banner.png');
     background-color: rgba(0, 255, 255, 0.108);
 
+    @media screen and (min-width: rem(800)) {
+      height: 70vh;
+    }
+
     ::before,
     ::after{
-      font-size: 0.9rem;
+      font-size: max( 1.1vw, 0.9rem);
       padding: 0.5rem;
       position: absolute;
-      bottom: 10%; //13%
+      bottom: 15%; //13%
       line-height: 1.2;
       opacity: 0;
     }
@@ -143,13 +191,14 @@
   &-pageTitle{
     padding: 1rem;
     margin-top: 7rem;
+    color: var(--negro);
     font-size: map-get($font, responsive-font );
     font-weight: 700;
   }
 }
 
 .menu--open{
-  clip-path: circle(150% at 50% 0);
+  clip-path: circle(140.9% at 0 0);
 }
 
 .link-opacity-1{
@@ -183,4 +232,23 @@
     opacity: 0;
     pointer-events: none
   };
+}
+
+@keyframes aniShoppingCar {
+  0%{
+    transform: scale(1);
+  }
+  5%{
+    transform: scale(0.8);
+  }
+  40%{
+    transform: scale(0.8) translate(0.3rem);
+    filter: hue-rotate(200deg);
+  }
+  80%{
+    transform: scale(0.8) translate(-0.3rem);
+  }
+  100%{
+    transform: scale(1);
+  }
 }

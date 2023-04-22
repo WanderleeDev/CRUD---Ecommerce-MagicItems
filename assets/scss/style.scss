@@ -1,9 +1,12 @@
 @use '../scss/base/reset.scss' as *;
 @use '../scss/abstract/shared.scss' as *;
 @use '../scss/layout/header.scss';
+@use '../scss/layout/footer.scss';
 
 body{
   @include textFormatting(1.5rem, 1.5rem);
-  color: var(--negro);
+  color: var(--white);
   background-color: var(--blanco);
+  max-width: rem(1600);
+  margin: auto
 }
