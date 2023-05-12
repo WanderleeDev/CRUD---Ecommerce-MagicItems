@@ -1,0 +1,1 @@
+import '@/partials/404/fail.scss';

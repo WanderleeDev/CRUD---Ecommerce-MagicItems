@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic items</title>
+  </head>
+  <body>
+
+    <div class="mainFormsContainer">
+
+      <div class="formSection formSection-login ">
+        <figure class="formSection-containerImg">
+          <img class="formSection-img" src="/assets/img/fondo2.webp" alt="#">
+          <figcaption class="formSection-imgTitle"></figcaption>
+        </figure>
+
+        <form id="loginForm" class="form" action="" method="post">
+          <fieldset class="form-data">
+            <legend class="form-title">Ingresar a mi cuenta</legend>
+            <div class="form-subContainer">
+              <label for="username" class="form-label">Nombre de usuario</label>
+              <input id="username" name="username" type="text" class="form-input" required>
+            </div>
+            <div class="form-subContainer">
+              <label for="userPassword" class="form-label">Contraseña</label>
+              <input id="userPassword" name="userPassword" type="password" class="form-input" required>
+            </div>
+            <div class="form-subContainer">
+              <input id="remenberPass" type="checkbox" class="form-inputCheck" value="true" name="rememberPass">
+              <label for="remenberPass" class="form-labelCheck">Recordar datos</label>
+            </div>
+          </fieldset>
+          <input id="btnLogin" class="form-submitBtn" type="submit" value="Iniciar sesión" aria-label="Enviar datos para iniciar sesión">
+          <input class="form-resetBtn" type="reset" aria-label="limpiar formulario de entrada">
+        </form>
+
+        <button class="formChangeBtn" aria-label="cambiar">Registrarse</button>
+      </div>
+
+      <div class="formSection formSection-register">
+        <figure class="formSection-containerImg">
+          <img class="formSection-img" src="/assets/img/fondo1.webp" alt="#">
+          <figcaption class="formSection-imgTitle"></figcaption>
+        </figure>
+
+        <form id="registrationForm" class="form" action="" method="post" autocomplete="off">
+          <fieldset class="form-data">
+            <legend class="form-title">Crear cuenta</legend>
+            <div class="form-subContainer">
+              <label class="form-label" for="name">Ingrese su nombre(s)</label>
+              <input class="form-input" type="text" name="name" id="name" required>
+            </div>
+  
+            <div class="form-subContainer">
+              <label class="form-label" for="surname">Ingrese sus apellidos</label>
+              <input class="form-input" type="text" name="surname" id="surname" required>
+            </div>
+
+            <div class="form-subContainer">
+              <label class="form-label" for="phone">Ingrese su número telefónico</label>
+              <input class="form-input" type="tel" name="phone" id="phone" required>
+            </div>
+  
+            <div class="form-subContainer">
+              <label class="form-label" for="age">Ingrese su edad</label>
+              <input class="form-input" type="number" name="age" id="age" required>
+            </div>
+
+            <div class="form-subContainer">
+              <label class="form-label" for="email">Ingrese su email</label>
+              <input class="form-input" type="email" name="email" id="email" required>
+            </div>
+
+            <div class="form-subContainer">
+              <label class="form-label" for="password">Defina su contraseña</label>
+              <input class="form-input" type="password" name="password" id="password" required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[0-9])(?=.*[@%#$%^&+=])\S{10,15}$">
+            </div>
+  
+            <div class="form-subContainer">
+              <input class="form-inputCheck" type="checkbox" name="conditions" value="true" id="conditions" required>
+              <label class="form-labelCheck" for="conditions">Aceptar términos y condiciones</label>
+            </div>
+  
+          </fieldset>
+          <input id="btnRegister" class="form-submitBtn" type="submit" value="Registrarse">
+          <input class="form-resetBtn" type="reset">
+        </form>
+
+        <button class="formChangeBtn" aria-label="cambiar a iniciar sesión">Iniciar sesión</button>
+      </div>
+
+    </div>
+
+  <script type="module" src="validations.js"></script>
+  </body>
+</html>

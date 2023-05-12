@@ -1,0 +1,167 @@
+@use '@/scss/base/reset.scss' as *;
+            
+.page404{
+    --clr-404: rgb(17, 144, 13);
+    --clr-radial: rgba(17,96,13,1);
+    --borderType:double;
+    --time: 15s;
+    --animate:linear;
+    --repeat: infinite;
+    position: relative;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: radial-gradient(circle, var(--clr-radial) 7%, rgba(0,0,0,1) 55%);
+    overflow: hidden;
+    height: 100vh;
+    &-header{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      z-index: 10;
+    }
+    &-title{
+      position: relative;
+      display: flex;
+      width: max(10rem, 18%);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      color: #ffffff;
+      text-shadow: 0.3rem 0.3rem 0.6rem #000;
+      &::after{
+        position: absolute;
+        content: "Estas en un lugar desconocido  y sin contenido , volvamos a un lugar mas seguro 😎";
+        width: max(18rem, 100%);
+        font-size: 1.3rem;
+        padding: 2rem;
+        text-align: center;
+        backdrop-filter: blur(.2rem);
+        background:url(https://www.dropbox.com/s/fp6tklbg6ykozh7/glitch-overlay.svg?raw=1), rgba(0, 0, 0, 0.6);
+        opacity: 0;
+        transition: opacity 0.2s linear;
+      }
+      &:hover::after{
+        opacity: 1;
+      }
+    }
+    &-span{
+      position: absolute;
+      font-size: min(5.5rem,20vw);
+      font-weight: bold;
+      &--left{
+        bottom: 50%;
+        font-size: min(5rem,18vw);
+        align-self: flex-start;
+        z-index: -10;
+      }
+      &--right{
+        top: 50%;
+        font-size: min(5rem,18vw);
+        align-self: self-end;
+        z-index: -10;
+      }
+    }
+    &-container{
+      position: absolute;
+      width: 180vw;
+      transform: rotateZ(5deg);
+    }
+    &-subContainer{
+      width: 100%;
+      display: flex;
+      position: relative;
+      justify-content: center;
+      align-content: center;
+      transform-origin: center;
+      perspective: 62.5rem;
+      transform-style: preserve-3d;
+      scale: 0.6;
+      animation: rotar var(--time) var(--animate) var(--repeat);
+      pointer-events: none;
+    }
+    &-marqueeA,
+    &-marqueeB,
+    &-marqueeC{
+      position: absolute;
+      width: 100%;
+      color: #000000;
+      background-color: var(--clr-404);
+      text-transform: uppercase;
+      padding: 1rem 0;
+      font-weight: 900;
+      letter-spacing: 0.5rem;
+      font-size: 1.5rem;
+      box-shadow: .2rem .2rem 1.2rem var(--clr-404);
+      border: var(--borderType) 0.2rem rgba(0, 0, 0, 0.337);
+    }
+    &-marqueeA{
+      transform: rotateX(0deg) translateZ(0.9rem) translateY(-0.58rem);
+      transition: background-color 0.1s linear;
+      &:hover{
+        background-color: #f2181890;
+      }
+    }
+    &-marqueeB{
+      transform: rotateX(60deg) translateX(0rem) translateZ(-0.9rem) translateY(-0.58rem);
+    }
+    &-marqueeC{
+      transform: rotateX(120deg) translateX(0rem) translateZ(1.9rem);
+      transition: background-color 0.1s linear;
+    }
+    &-btn{
+      position: absolute;
+      top: 10%;
+      text-transform: uppercase;
+      text-align: center;
+      width: 10rem;
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      border: solid 1px currentColor;
+      color: #fff;
+      background-color: #000;
+      cursor: pointer;
+      &:hover{
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+
+.subB{
+  width: 200vw;
+  transform: rotateZ(-140deg) translateY(20rem) translateX(5rem);
+}
+.subC{
+  width: 200vw;
+  transform: rotateZ(-55deg) rotateX(240deg);
+  scale: 2;
+}
+.subD{
+  width: 100vw;
+  transform: rotateZ(-200deg) translateY(-5rem) rotateY(180deg);
+  scale: 3;
+}
+.subE{
+  width: 120vw;
+  transform: rotateZ(-50deg) translateZ(6rem) translateY(-85rem) translateX(-37rem);
+  scale: 0.5;
+}
+.subF{
+  transform: rotateZ(-90deg) translateY(-25rem);
+  scale: 1.1;
+}
+
+@keyframes rotar{
+  to{
+    transform: rotateX(0deg);
+  }
+  from{
+    transform: rotateX(360deg);
+  }
+}

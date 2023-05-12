@@ -2,43 +2,38 @@
   "icons": [
     {
       "img": "./assets/images/iconsSvg/ring.svg",
-      "title": "ring section",
-      "altText": "go to ring section" 
+      "title": "rings",
+      "altText": "go to rings section" 
     },
     {
       "img": "./assets/images/iconsSvg/magicBook .svg",
-      "title": "Magic book",
+      "title": "magic books",
       "altText": "go to magical books section" 
     },
     {
       "img": "./assets/images/iconsSvg/mana.svg",
-      "title": "potion",
+      "title": "potions",
       "altText": "go to section potions" 
     },
     {
       "img": "./assets/images/iconsSvg/mini-staff.svg",
-      "title": "Magic wand",
+      "title": "wands",
       "altText": "go to magic wands section" 
     },
     {
       "img": "./assets/images/iconsSvg/orb.svg",
-      "title": "magic orb",
+      "title": "magic orbs",
       "altText": "go to magic orbs section" 
     },
     {
       "img": "./assets/images/iconsSvg/potion.svg",
-      "title": "potion containers",
+      "title": "containers",
       "altText": "go to section of containers for basic potions" 
     },
     {
-      "img": "./assets/images/iconsSvg/sage.svg",
-      "title": "ancient wizard",
-      "altText": "go to wizard section" 
-    },
-    {
-      "img": "./assets/images/iconsSvg/pentagrama.png",
-      "title": "David's star",
-      "altText": "David's star" 
+      "img": "./assets/images/iconsSvg/clock.svg",
+      "title": "clocks",
+      "altText": "go to clocks section" 
     }
   ],
 
@@ -149,7 +144,7 @@
           "dataExtra": "Este anillo es recomendado para usuarios avanzados que tienen un alto nivel de control sobre la magia blanca y la luz."
         }
       ],
-      "books":[
+      "magic books":[
         {
           "name":"Arcana: el arte mágico",
           "description":"Este libro de tapa blanca es una guía práctica para iniciarse en el mundo de la magia. Aprende los hechizos básicos y los principios fundamentales que rigen esta ciencia oculta. Ideal para principiantes y curiosos que quieran descubrir los secretos de la magia.",
@@ -236,173 +231,169 @@
           "dataExtra": ""
         }
       ],
-      "wands":{
-        "basic":[
-          {
-            "name": "Varita Rancia",
-            "description": "Esta varita mágica es ideal para practicar hechizos base. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
-            "price": "50",
-            "type": ["Beginner", "Wands"],
-            "image": "assets/images/productos/varita/basic/varita-rancia.png",
-            "dataExtra": "Para practicar hechizos base"
-          },
-          {
-            "name": "Varita Serpentina",
-            "description": "La forma de esta varita mágica es muy sencilla, pero su diseño en forma de serpiente le da un toque especial. Es perfecta para practicar hechizos elementales y tiene un agarre muy cómodo.",
-            "price": "80",
-            "type": ["Beginner", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Serpentina.png",
-            "dataExtra": "Para practicar hechizos elementales"
-          },
-          {
-            "name": "Varita Desaliñada",
-            "description": "Esta varita mágica es similar a la varita rancia, pero está diseñada para hechizos de largo alcance. Su apariencia desaliñada puede engañar a cualquiera, pero su poder es indudable.",
-            "price": "120",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Desaliñada.png",
-            "dataExtra": "Para hechizos de largo alcance"
-          },
-          {
-            "name": "Varita de Roble",
-            "description": "Esta varita mágica es robusta y de estilo antiguo. Potencia los hechizos naturales y está hecha para durar. Si eres un amante de la naturaleza, esta es la varita perfecta para ti.",
-            "price": "200",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-de-Roble.png",
-            "dataExtra": "Potencia los hechizos naturales"
-          },
-          {
-            "name": "Varita Lince",
-            "description": "Esta varita mágica es delgada y tiene un agarre práctico. Te dará velocidad en la ejecución de tus hechizos y aumentará su alcance. Perfecta para aquellos que necesitan una varita rápida y eficiente.",
-            "price": "150",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Lince.png",
-            "dataExtra": "Aumenta la velocidad y el alcance de los hechizos"
-          },
-          {
-            "name": "Varita Robusta",
-            "description": "Esta varita es perfecta para aquellos que buscan potenciar sus hechizos, aunque su alcance es corto. Está hecha de una madera resistente y tiene un color marrón oscuro.",
-            "price": "50",
-            "type": ["Beginner", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Robusta.png",
-            "dataExtra": ""
-          },
-          {
-            "name": "Varita Regis",
-            "description": "Esta varita es ideal para aquellos que buscan hechizos defensivos. Está hecha de una madera elegante y tiene un núcleo de plata. Se dice que su dueño puede usarla para conjurar poderosas barreras mágicas.",
-            "price": "200",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Regis.png",
-            "dataExtra": ""
-          },
-          {
-            "name": "Varita Veloz",
-            "description": "Esta varita fina es perfecta para aquellos que buscan aumentar el rango y la velocidad de sus hechizos. Es fácil de sostener y está hecha de una madera ligera. Se dice que su núcleo está hecho de pelo de unicornio.",
-            "price": "150",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Veloz.png",
-            "dataExtra": ""
-          },
-          {
-            "name": "Varita Simple",
-            "description": "Esta varita es perfecta para principiantes. Está hecha de una madera común y es fácil de usar. Aunque no es muy poderosa, es una buena opción para aquellos que quieren practicar sus hechizos básicos.",
-            "price": "30",
-            "type": ["Beginner", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-simple.png",
-            "dataExtra": ""
-          },
-          {
-            "name": "Varita Lotus",
-            "description": "Esta varita está hecha de madera oscura y es de estilo sencillo y fino. Es ideal para realizar hechizos oscuros y de gran poder. Tiene una longitud de 33 cm y se dice que su núcleo está hecho de un fragmento de la piedra filosofal.",
-            "price": "200",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Lotus.png",
-            "dataExtra": ""
-          },
-          {
-            "name": "Varita Serpentina Media",
-            "description": "Esta varita es similar a la Serpentina, pero de tamaño mediano. Su principal característica es la velocidad en la ejecución de los hechizos, permitiendo a su portador lanzar dos hechizos simultáneamente. Tiene una longitud de 35 cm y se dice que su núcleo está hecho de un fragmento de la varita de Merlín.",
-            "price": "250",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-serpentina-media.png",
-            "dataExtra": ""
-          },
-          {
-            "name": "Varita Alfil",
-            "description": "Esta varita potencia los hechizos básicos y de curación, otorgando un halo curativo a su portador. Está hecha de madera clara y tiene una longitud de 37 cm. Se dice que su núcleo está hecho de una escama del dragón Héctor.",
-            "price": "300",
-            "type": ["Advanced", "Wands"],
-            "image": "assets/images/productos/varita/basic/Varita-Alfil.png",
-            "dataExtra": ""
-          }          
-        ],
-        "deluxe":[
-          {
-            "name": "Varita deluxe",
-            "description": "Esta varita mágica es ideal para practicar hechizos base. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
-            "price": "300",
-            "type": ["Beginner", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/varita-deluxe.png",
-            "dataExtra": "Para practicar hechizos base"
-          },
-          {
-            "name": "Varita deluxe R",
-            "description": "Esta varita mágica es similar a la Varita Deluxe pero está especializada en hechizos de alcance corto. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
-            "price": "300",
-            "type": ["Intermediate", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/varita-deluxe-r.png",
-            "dataExtra": "Especializada en hechizos de alcance corto"
-          },
-          {
-            "name": "Varita delux",
-            "description": "Esta varita mágica está especializada en invocaciones y curación. Es una varita elegante y sofisticada que no tiene nada que envidiar a otras varitas.",
-            "price": "300",
-            "type": ["Advanced", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/varita-delux.png",
-            "dataExtra": "Especializada en invocaciones y curación"
-          },
-          {
-            "name": "Varita gelos",
-            "description": "Esta varita mágica está adornada con una gema marina y está especializada en hechizos elementales de agua y hielo. Requiere de expertos en el manejo de varitas para su uso adecuado.",
-            "price": "450",
-            "type": ["Advanced", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/varita-gelos.png",
-            "dataExtra": "Especializada en hechizos elementales de agua y hielo"
-          },
-          {
-            "name": "Varita aqua",
-            "description": "Esta varita mágica está incrustada con una mini gema marina imbuida de magia curativa y potencia el elemento agua y curativos para especialistas. Es una varita muy útil para los curanderos y especialistas en magia del agua.",
-            "price": "450",
-            "type": ["Advanced", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/varita-aqua.png",
-            "dataExtra": "Potencia el elemento agua y curativos para especialistas"
-          },
-          {
-            "name": "Varita Termus",
-            "description": "Concentra y potencia los hechizos de fuego y tierra en manos expertas. Se aprovecha mejor su habilidad con la práctica.",
-            "price": "400",
-            "type": ["Advanced", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/termus.png",
-            "dataExtra": "Para usuarios experimentados"
-          },
-          {
-            "name": "Varita Doble",
-            "description": "Presenta una bifurcación al final, especializada para combates de corta y larga distancia. Permite encadenar y lanzar hasta 2 hechizos, realmente muy potente.",
-            "price": "900",
-            "type": ["Advanced", "Wands"],
-            "image": "assets/images/productos/varita/deluxe/varita-doble.png",
-            "dataExtra": "Para usuarios avanzados y expertos"
-          },
-          {
-              "name": "Varita Rayo Veloz",
-              "description": "No hay muchas varitas dedicadas al elemento trueno debido a sus potencia de doble filo. Potencia su elemento, como permite tener acceso a su propia gama de hechizos.",
-              "price": "100",
-              "type": ["Advanced", "Wands"],
-              "image": "assets/images/productos/varita/deluxe/rayo-veloz.png",
-              "dataExtra": "Para usuarios expertos y especialistas"
-          }
-        ]
-      },
-      "orb":[
+      "wands":[
+        {
+          "name": "Varita Rancia",
+          "description": "Esta varita mágica es ideal para practicar hechizos base. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
+          "price": "50",
+          "type": ["Beginner", "Wands"],
+          "image": "assets/images/productos/varita/basic/varita-rancia.png",
+          "dataExtra": "Para practicar hechizos base"
+        },
+        {
+          "name": "Varita Serpentina",
+          "description": "La forma de esta varita mágica es muy sencilla, pero su diseño en forma de serpiente le da un toque especial. Es perfecta para practicar hechizos elementales y tiene un agarre muy cómodo.",
+          "price": "80",
+          "type": ["Beginner", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Serpentina.png",
+          "dataExtra": "Para practicar hechizos elementales"
+        },
+        {
+          "name": "Varita Desaliñada",
+          "description": "Esta varita mágica es similar a la varita rancia, pero está diseñada para hechizos de largo alcance. Su apariencia desaliñada puede engañar a cualquiera, pero su poder es indudable.",
+          "price": "120",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Desaliñada.png",
+          "dataExtra": "Para hechizos de largo alcance"
+        },
+        {
+          "name": "Varita de Roble",
+          "description": "Esta varita mágica es robusta y de estilo antiguo. Potencia los hechizos naturales y está hecha para durar. Si eres un amante de la naturaleza, esta es la varita perfecta para ti.",
+          "price": "200",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-de-Roble.png",
+          "dataExtra": "Potencia los hechizos naturales"
+        },
+        {
+          "name": "Varita Lince",
+          "description": "Esta varita mágica es delgada y tiene un agarre práctico. Te dará velocidad en la ejecución de tus hechizos y aumentará su alcance. Perfecta para aquellos que necesitan una varita rápida y eficiente.",
+          "price": "150",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Lince.png",
+          "dataExtra": "Aumenta la velocidad y el alcance de los hechizos"
+        },
+        {
+          "name": "Varita Robusta",
+          "description": "Esta varita es perfecta para aquellos que buscan potenciar sus hechizos, aunque su alcance es corto. Está hecha de una madera resistente y tiene un color marrón oscuro.",
+          "price": "50",
+          "type": ["Beginner", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Robusta.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Varita Regis",
+          "description": "Esta varita es ideal para aquellos que buscan hechizos defensivos. Está hecha de una madera elegante y tiene un núcleo de plata. Se dice que su dueño puede usarla para conjurar poderosas barreras mágicas.",
+          "price": "200",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Regis.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Varita Veloz",
+          "description": "Esta varita fina es perfecta para aquellos que buscan aumentar el rango y la velocidad de sus hechizos. Es fácil de sostener y está hecha de una madera ligera. Se dice que su núcleo está hecho de pelo de unicornio.",
+          "price": "150",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Veloz.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Varita Simple",
+          "description": "Esta varita es perfecta para principiantes. Está hecha de una madera común y es fácil de usar. Aunque no es muy poderosa, es una buena opción para aquellos que quieren practicar sus hechizos básicos.",
+          "price": "30",
+          "type": ["Beginner", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-simple.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Varita Lotus",
+          "description": "Esta varita está hecha de madera oscura y es de estilo sencillo y fino. Es ideal para realizar hechizos oscuros y de gran poder. Tiene una longitud de 33 cm y se dice que su núcleo está hecho de un fragmento de la piedra filosofal.",
+          "price": "200",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Lotus.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Varita Serpentina Media",
+          "description": "Esta varita es similar a la Serpentina, pero de tamaño mediano. Su principal característica es la velocidad en la ejecución de los hechizos, permitiendo a su portador lanzar dos hechizos simultáneamente. Tiene una longitud de 35 cm y se dice que su núcleo está hecho de un fragmento de la varita de Merlín.",
+          "price": "250",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-serpentina-media.png",
+          "dataExtra": ""
+        },
+        {
+          "name": "Varita Alfil",
+          "description": "Esta varita potencia los hechizos básicos y de curación, otorgando un halo curativo a su portador. Está hecha de madera clara y tiene una longitud de 37 cm. Se dice que su núcleo está hecho de una escama del dragón Héctor.",
+          "price": "300",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/basic/Varita-Alfil.png",
+          "dataExtra": ""
+        },          
+        {
+          "name": "Varita deluxe",
+          "description": "Esta varita mágica es ideal para practicar hechizos base. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
+          "price": "300",
+          "type": ["Beginner", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/varita-deluxe.png",
+          "dataExtra": "Para practicar hechizos base"
+        },
+        {
+          "name": "Varita deluxe R",
+          "description": "Esta varita mágica es similar a la Varita Deluxe pero está especializada en hechizos de alcance corto. Es una varita sencilla de madera con un agarre cómodo y está diseñada para ayudar a los estudiantes a mejorar su técnica.",
+          "price": "300",
+          "type": ["Intermediate", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/varita-deluxe-r.png",
+          "dataExtra": "Especializada en hechizos de alcance corto"
+        },
+        {
+          "name": "Varita delux",
+          "description": "Esta varita mágica está especializada en invocaciones y curación. Es una varita elegante y sofisticada que no tiene nada que envidiar a otras varitas.",
+          "price": "300",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/varita-delux.png",
+          "dataExtra": "Especializada en invocaciones y curación"
+        },
+        {
+          "name": "Varita gelos",
+          "description": "Esta varita mágica está adornada con una gema marina y está especializada en hechizos elementales de agua y hielo. Requiere de expertos en el manejo de varitas para su uso adecuado.",
+          "price": "450",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/varita-gelos.png",
+          "dataExtra": "Especializada en hechizos elementales de agua y hielo"
+        },
+        {
+          "name": "Varita aqua",
+          "description": "Esta varita mágica está incrustada con una mini gema marina imbuida de magia curativa y potencia el elemento agua y curativos para especialistas. Es una varita muy útil para los curanderos y especialistas en magia del agua.",
+          "price": "450",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/varita-aqua.png",
+          "dataExtra": "Potencia el elemento agua y curativos para especialistas"
+        },
+        {
+          "name": "Varita Termus",
+          "description": "Concentra y potencia los hechizos de fuego y tierra en manos expertas. Se aprovecha mejor su habilidad con la práctica.",
+          "price": "400",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/termus.png",
+          "dataExtra": "Para usuarios experimentados"
+        },
+        {
+          "name": "Varita Doble",
+          "description": "Presenta una bifurcación al final, especializada para combates de corta y larga distancia. Permite encadenar y lanzar hasta 2 hechizos, realmente muy potente.",
+          "price": "900",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/varita-doble.png",
+          "dataExtra": "Para usuarios avanzados y expertos"
+        },
+        {
+          "name": "Varita Rayo Veloz",
+          "description": "No hay muchas varitas dedicadas al elemento trueno debido a sus potencia de doble filo. Potencia su elemento, como permite tener acceso a su propia gama de hechizos.",
+          "price": "100",
+          "type": ["Advanced", "Wands"],
+          "image": "assets/images/productos/varita/deluxe/rayo-veloz.png",
+          "dataExtra": "Para usuarios expertos y especialistas"
+        }
+      ],
+      "magic orbs":[
         {
           "name": "Orbe del Alma",
           "description": "Orbe sagrada que otorga protección elemental y potencia la creatividad artística.",
@@ -453,7 +444,7 @@
         }
         
       ],
-      "clock":[
+      "clocks":[
         {
           "name": "reloj cronos",
           "description": "reloj de mesa con diseño vintage y funcionalidad de cronómetro",
@@ -487,7 +478,7 @@
           "dataExtra": ""
         }
       ],
-      "potion":[
+      "containers":[
         {    
           "name": "recipiente ignis",    
           "description": "Un resistente recipiente para contener pociones de elemento fuego. Su diseño único evita que el vidrio se rompa debido al calor extremo.",    
@@ -527,6 +518,48 @@
           "type": ["beginner"],
           "image": "assets/images/productos/botellitas/recipiente-umbra.png",
           "dataExtra": ""
+        }
+      ],
+      "potions":[
+        {
+          "name": "Poción aqua",
+          "description": "Una poción aqua es una bebida mágica que te da el poder de respirar bajo el agua por un tiempo limitado. Tiene un sabor refrescante y un color que se parece al cielo en un dia claro. Para prepararla, necesitas agua pura, escamas de sirena y una gota de sangre de tiburón.",
+          "price": "30",
+          "type": ["beginner"],
+          "image": "assets/images/productos/pociones/aquaPotion.webp",
+          "dataExtra": "30 min de duración"
+        },
+        {
+          "name": "Poción curativa",
+          "description": "Es una bebida mágica que puede restaurar la salud de quien la toma. El líquido es rojo cristalino y tiene un sabor dulce y refrescante. Se dice que esta poción contiene la esencia de la vida misma.",
+          "price": "20",
+          "type": ["beginner"],
+          "image": "assets/images/productos/pociones/healPotion.webp",
+          "dataExtra": "Se puede dosificar en 2 usos"
+        },
+        {
+          "name": "Poción nature",
+          "description": "Es una sustancia mágica que contiene luz pura en su interior. Se puede usar para iluminar lugares oscuros o para lanzar rayos a los enemigos. No se debe beber, sino arrojar con cuidado. Es una pocion muy útil y versátil para los aventureros.",
+          "price": "200",
+          "type": ["Intermediate"],
+          "image": "assets/images/productos/pociones/lightPotion.webp",
+          "dataExtra": "Solo 1 uso"
+        },
+        {
+          "name": "Poción umbra",
+          "description": "Es un brebaje oscuro que contiene oscuridad pura en su interior. Al arrojarla, genera una penumbra en el área afectada y causa daño oscuro a las criaturas que se encuentren dentro, por lo que hay que tener cuidado al manipularla.",
+          "price": "200",
+          "type": ["Intermediate"],
+          "image": "assets/images/productos/pociones/darkPotion.webp",
+          "dataExtra": "Solo 1 uso"
+        },
+        {
+          "name": "Poción flux",
+          "description": "Contiene un liquido claro que refleja la luz como un espejo. En su interior se ven unas finas lineas negras que se mueven como serpientes. Al beberla te vuelve invisible, lo que le permite atacar o escapar sin ser visto. Solo funciona una vez, asi que úsala con cuidado.",
+          "price": "200",
+          "type": ["Intermediate"],
+          "image": "assets/images/productos/pociones/fluxPotion.webp",
+          "dataExtra": "Solo 1 uso"
         }
       ]
   }

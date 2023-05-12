@@ -20,10 +20,6 @@
       justify-content: center;
     }
   }
-  &-navbar:hover{
-    color: var(--blanco);
-    background-color: var(--negroPlus);
-  }
 
   &-containerLogo{
     display: none;
@@ -41,6 +37,7 @@
   &-btnSvg{
     width: 2rem;
     height: 2rem;
+    //color: var(--negro);
     cursor: pointer;
   }
 
@@ -77,6 +74,7 @@
     width: 100%;
     border-radius: 1rem;
     outline: transparent;
+    padding-left: .5rem;
   }
 
   &-shoppingCarLink{
@@ -112,6 +110,7 @@
       flex-flow: row nowrap;
       gap: 0;
       min-width: 500px;
+      background-color: transparent;
       //padding-inline: 2rem;
       position: initial;
       height: initial;
@@ -156,13 +155,15 @@
     position: relative;
     display: grid;
     align-content: center;
-    height: rem(500);
+    height: rem(520);
     //margin-top: 6rem;
-    background-image: url('../../images/banner/banner.png');
+    background: url('@/images/banner/banner.webp') no-repeat fixed  bottom center/100%;
+    background-blend-mode: difference;
+    background-size: cover;
     background-color: rgba(0, 255, 255, 0.108);
 
     @media screen and (min-width: rem(800)) {
-      height: 70vh;
+      height: 80vh;
     }
 
     ::before,
@@ -191,7 +192,7 @@
   &-pageTitle{
     padding: 1rem;
     margin-top: 7rem;
-    color: var(--negro);
+    color: #ececec;
     font-size: map-get($font, responsive-font );
     font-weight: 700;
   }
@@ -199,10 +200,18 @@
 
 .menu--open{
   clip-path: circle(140.9% at 0 0);
+  background-color: rgba(7, 26, 20, 0.694);
+  backdrop-filter: blur(.15rem);
 }
 
 .link-opacity-1{
   opacity: 1;
+}
+
+.changeColorNav{
+  color: var(--blanco);
+  background: var(--negroPlus);
+  transition: color .3s linear, background .3s linear;
 }
 
 @keyframes rotateIcon {

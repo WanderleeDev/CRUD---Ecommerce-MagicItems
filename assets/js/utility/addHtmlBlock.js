@@ -1,4 +1,5 @@
 export function addHtmlBlock(content, target, position = 'end') {
+  
   const targetElement = document.querySelector(target);
   switch (position) {
     case 'end':

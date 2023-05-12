@@ -1,0 +1,127 @@
+.homeItem{
+  position: relative;
+  padding: 2rem 0;
+  display: grid;
+  gap: 1rem;
+  width: 90%;
+  margin-inline: auto;
+  
+  &-header{
+    --backTitle: var(--blancoDark);
+    --borderColor: var(--negroDark);
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin: 0 1rem; 
+    overflow: scroll;
+    @media screen and (min-width:20.75rem) {
+      overflow: auto; 
+    }
+  }
+  
+  &-icon{
+    width: 3rem;
+    aspect-ratio: 1/1;
+    padding: .4rem;
+    border: solid .15rem var(--borderColor);
+    border-radius: 50%;
+    background-color: var(--borderColor);
+    //transform: translateX(-.1rem);
+  }
+  
+  &-title{
+    position: relative;
+    width: 1rem;
+    height: 2rem;
+    padding: 0;
+    border-radius: 2rem;    
+    border: .15rem solid var(--borderColor);
+    background-color: var(--backTitle);
+    color: var(--negroDark);
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transform: translateX(-2.2rem);
+    opacity: 0;
+    overflow: hidden;
+    z-index: -1;
+
+    //implementar con objectObserver js
+    animation: displayTitle .8s linear forwards ;
+  }
+
+  &-body{
+    background-color: #fcf7da0f;
+    display: flex;
+    gap: max(1.55rem, 4vw);
+    padding: 1rem;
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+      height: .3rem;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(208, 200, 151, 0.316);
+      border-radius: 20px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: var(--blancoPlus); 
+    } 
+  }
+
+  &-card{
+    flex: 0 0 min(10rem, 100%);
+    position: relative;
+    overflow: hidden;
+    box-shadow:  1px -1px 5px #bebebe,
+             -1px 1px 5px #bebebe;
+    &:has(svg){
+      display: grid;
+      place-items: center;
+      background: var(--blanco);
+    }
+    &:has(.homeItem-link) .homeItem-link{
+      &:hover{
+        transition: transform .2s linear;
+        transform: scale(1.2);
+      }
+    }
+    &:hover .homeItem-imgProduct{
+      transform: scale(1.2);
+      opacity: .6;
+    }
+    &:hover .homeItem-productTitle{
+      opacity: 1;
+      top: 50%;
+    }
+  }
+
+  &-imgProduct{
+    opacity: .9;
+    aspect-ratio: 1/1;
+    transition: opacity .4s linear .5s, transform .4s linear .5s;
+  }
+  
+  &-productTitle{
+    width: max-content;
+    position: absolute;
+    padding: .5rem 1rem;
+    inset: 60% auto auto 50%;
+    text-align: center;
+    font-weight: 600;
+    background-color: var(--negroPlus);
+    color: #fff;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.4s linear 0.8s, top 0.5s linear 0.7s;
+    opacity: 0;
+  }
+}
+
+.displayTitle{
+  opacity: 1;
+  width:15rem;
+  padding: 0 2rem;
+  transition: opacity 0.7s linear, padding .7s linear, width .7s linear ;
+}
+
+
